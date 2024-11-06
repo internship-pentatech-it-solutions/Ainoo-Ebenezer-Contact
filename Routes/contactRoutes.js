@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const authenticateToken = require('../Middleware/authMiddleware');
 const {
     createContact,
     getAllContact,  
@@ -8,16 +9,17 @@ const {
     updateContact
 } = require('../Controller/contactController')
 
+
 // creating the get req
-router.post('/', createContact);
+router.post('/', authenticateToken,createContact);
 
-router.get('/', getAllContact);
+router.get('/', authenticateToken,getAllContact);
 
-router.get('/:id', getContact);
+router.get('/:id', authenticateToken,getContact);
 
 
-router.put('/:id',updateContact);
+router.put('/:id', authenticateToken,updateContact);
 
-router.delete('/:id',delContact);
+router.delete('/:id', authenticateToken,delContact);
 
 module.exports = router;
