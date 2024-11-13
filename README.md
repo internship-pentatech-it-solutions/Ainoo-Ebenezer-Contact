@@ -72,7 +72,7 @@ This is a RESTful API for managing contacts, with features for authentication, e
 ### Contact Management
 
 - **Create Contact**: `POST /contacts`  
-  **Protected Route**. **Body**: `{ "name": "Contact Name", "email": "contact@example.com", "phone": "1234567890" }`
+  **Protected Route**. **Body**: `{ "name": "Contact Name", "email": "contact@example.com", "phone": "1234567890", "description": "CE rep", "blocked": "True", "liked": "True" }`
 
 - **Get All Contacts**: `GET /contacts`  
   **Protected Route**
