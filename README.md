@@ -41,7 +41,7 @@ This is a RESTful API for managing contacts, with features for authentication, e
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/contact-management-app.git
+   git clone https://github.com/internship-pentatech-it-solutions/Ainoo-Ebenezer-Contact.git
    cd contact-management-app
    ```
 
