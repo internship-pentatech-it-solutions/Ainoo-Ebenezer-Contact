@@ -17,6 +17,12 @@ const contactSchema = new mongoose.Schema({
     description:{
         type: String,
         trim: true,
+    },
+    blocked:{
+        type: Boolean
+    },
+    liked:{
+        type: Boolean
     }
 });
 

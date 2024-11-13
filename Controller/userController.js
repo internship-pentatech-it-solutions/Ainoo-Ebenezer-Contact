@@ -1,6 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const BlacklistToken = require("../model/BlacklistToken.js");
 const users = require('../model/userModel');
 const { default: mongoose } = require('mongoose');
 
